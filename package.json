@@ -1,0 +1,57 @@
+{
+  "name": "react-native-agenda-view",
+  "description": "Display a schedule/agenda quickly with <AgendaView />",
+  "version": "1.0.0",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "component",
+    "ios",
+    "android",
+    "agenda",
+    "calendar"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js index.test.js examples/",
+    "precommit": "npm run lint",
+    "test": "ava --verbose 'index.test.js'",
+    "coverage": "nyc --reporter lcov --reporter html ava 'index.test.js'"
+  },
+  "files": [
+    "src"
+  ],
+  "ava": {
+    "babel": "inherit",
+    "require": "./ava-jsdom-setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frostney/react-native-agenda-view.git"
+  },
+  "homepage": "https://github.com/frostney/react-native-agenda-view#readme",
+  "bugs": {
+    "url": "https://github.com/frostney/react-native-agenda-view/issues"
+  },
+  "author": "Johannes Stein",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.0.3",
+    "babel-preset-react-native": "^1.7.0",
+    "codecov": "^1.0.1",
+    "enzyme": "^2.2.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.0",
+    "eslint-plugin-import": "^1.5.0",
+    "eslint-plugin-jsx-a11y": "^1.0.2",
+    "eslint-plugin-react": "^5.0.1",
+    "nyc": "^6.4.3",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-native": "^0.27.2",
+    "react-native-mock": "^0.2.3"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

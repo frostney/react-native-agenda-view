@@ -1,0 +1,4 @@
+extends: airbnb
+parser: babel-eslint
+rules:
+  no-use-before-define: 0
